@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --cor-principal:#000000 ;
+  --cor-secundaria:#284260 ;
+  --cor-destaque:#8305BD ;
+  --cor-background:#F3D689 ;
+    --cor-texto:#69A8F2 ;
+    --cor-te:#B7D9FF ;
+}
+
+body {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+h1, h2, h5 {
+  color: var(--cor-secundaria);
+  font-weight: 700;
+}
+
+footer a {
+  color: var(--cor-principal);
+}
+
+footer a:hover {
+  color: var(--cor-destaque);
+}
+
+body {
+  font-family: 'Chakra Petch', sans-serif;
+  background-color: var(--cor-background); /* ou use qualquer cor, ex: #ffffff */
+}
+
+.card-img-fixa {
+  height: 144px;
+  object-fit: cover;
+}
+
+.card {
+  background-color: var(--cor-secundaria);
+  color: #fff; /* Deixa o texto branco para melhor contraste */
+}
+
+.card-title {
+  color: var(--cor-texto); /* Cor do título */
+}
+
+.card-text {
+    color: var(--cor-texto);
+
+  color: #e7faff; /* Cor do texto, escolha a que preferir */
+}
