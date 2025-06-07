@@ -19,6 +19,7 @@
             e artes.</h1>
         <p>Sou estudante do João XXIII, e estou aprendendo a criar meu próprio portifólio e está sendo uma experiencia e
             tanto.</p>
+            <h5>Este portifólio inteiro foi programado em html, por mim.</h5>
         <p>Minhas habilidades</p>
         <div>
             <p class="badge bg-secondary">HTML</p>
@@ -38,10 +39,12 @@
                         <div class="card-body">
                             <h5 class="card-title">Desenhos no papel</h5>
                             <p class="card-text">Aqui estão algumas de obras de minha autoria no papel.</p>
-                            <button type="button" class="btn btn-link">Ver desenhos</button>
+                            <button type="button" class="btn btn-link" data-bs-toggle="modal"
+                                data-bs-target="#modall">Veja desenhos no papel.</button>
+
                         </div>
                     </div>
-                </div>               
+                </div>
                 <!-- Projeto 2  -->
                 <div class="col-4">
                     <div class="card h-100">
@@ -49,12 +52,60 @@
                         <div class="card-body">
                             <h5 class="card-title">Desenhos no Digital</h5>
                             <p class="card-text">Aqui estão algumas de obras de minha autoria no digital.</p>
-                            <button type="button" class="btn btn-link">Ver desenhos</button>
+                            <button type="button" class="btn btn-link" data-bs-toggle="modal"
+                                data-bs-target="#modal2">Veja desenhos no digitais.</button>
                         </div>
                     </div>
                 </div>
             </div>
     </main>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modall" tabindex="-1" aria-labelledby="modal1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Meus desenhos no papel.</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="text-align: center;">
+                    <img src="img/o.png" alt="desenhos de representatividade"class="img-fluid mb-2">
+                    <img src="img/papel.png" alt="desenhos de representatividade"class="img-fluid mb-2">
+                    <img src="img/deded.png" alt="desenhos de representatividade"class="img-fluid mb-2">
+                    
+                </div>
+                <div class="modal-footer">
+                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Meus desenhos no digital.</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="text-align: center;">
+                    <img src="img/digital.png" alt="desenhos de representatividade digital"class="img-fluid mb-2">
+                    <img src="img/d.png" alt="desenhos de representatividade"class="img-fluid mb-2">
+                    <img src="img/de.png" alt="desenhos de representatividade"class="img-fluid mb-2">
+ 
+                </div>
+                <div class="modal-footer">
+                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>                                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <footer class="container py-5">
         <h2>Entre em contato</h2>
         <p>gabrieljales2017@gmail.com</p>
@@ -64,5 +115,4 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
