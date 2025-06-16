@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
-  --cor-principal:#000000 ;
-  --cor-secundaria:#284260 ;
-  --cor-destaque:#8305BD ;
-  --cor-background:#F3D689 ;
-    --cor-texto:#69A8F2 ;
-    --cor-te:#B7D9FF ;
+  --cor-principal: #000000;
+  --cor-secundaria: #a084ca;   /* roxo claro e suave */
+  --cor-destaque: #8305BD;
+  --cor-background: #a084ca;   /* roxo claro e pastoso */
+  --cor-texto: #3d246c;
+  --cor-te: #B7D9FF;
 }
 
 body {
   font-family: 'Chakra Petch', sans-serif;
+  background-color: var(--cor-background);
 }
-
 h1, h2, h5 {
   color: var(--cor-secundaria);
   font-weight: 700;
@@ -49,4 +49,30 @@ body {
     color: var(--cor-texto);
 
   color: #e7faff; /* Cor do texto, escolha a que preferir */
+}
+
+.modal-content {
+  background-color: var(--cor-secundaria);
+  border-radius: 18px;
+  border: 2px solid var(--cor-texto);
+}
+
+.btn-link {
+  color: var(--cor-texto) !important; /* azul do seu tema */
+  font-size: 1.25rem; /* aumenta o tamanho */
+  font-weight: bold;
+  text-decoration: underline;
+   transition: color 0.2s;
+}
+
+.btn-link:hover, .btn-link:focus {
+  color: #1a237e !important; /* azul mais forte ao passar o mouse */
+  text-decoration: none;
+}
+
+.modal-content {
+  background-color: #0d6efd !important; /* azul Bootstrap */
+  border-radius: 18px;
+  border: 2px solid #1a237e;
+  color: #fff;
 }
